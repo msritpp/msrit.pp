@@ -97,6 +97,17 @@
       @keyframes blink{
       50%{
       background-color: transparent;}}
+      .yox{
+          text-align: center;
+      }
+      .yox p{
+          font-family: 'Black Ops One', cursive;
+          font-size:24px;
+      }
+      .yox #viewCount{
+        font-family: 'Black Ops One', cursive;
+        margin-top:-15px;
+        }
     </style>
 </head>
 <body>
@@ -120,13 +131,26 @@
                 </ul> 
         </div>   
     </div>
+    <div class="yox">
+    <p>No of views<p>
+    <h1 id="viewCount">0</h1>
+    </div>
     <div class="sox">
         <p>© MSRITPP,Developed By Mech.</p>
         
     </div>
     
     <script>
-       console.log("")
+       if (!localStorage.getItem('viewCount')) {
+        localStorage.setItem('viewCount', 0);
+    }
+
+
+    var viewCount = localStorage.getItem('viewCount');
+    document.getElementById('viewCount').textContent = viewCount;
+    
+    viewCount++;
+    localStorage.setItem('viewCount', viewCount);
     </script>
 </body>
 </html>

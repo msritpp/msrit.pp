@@ -51,7 +51,7 @@
       .sox p{
         text-align: center;
         background-color:  #333333;
-        height: 70px;
+        height: 150px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -141,12 +141,12 @@
         </ul>
        </div>
     <div class="sox">
-        <p>© MSRITPP,Developed By Mech.</p>
-        
+        <p>© MSRITPP,Developed By Mech.<span id='date-time'></span></p>  
     </div>
     
     <script>
-    
+        var dt = new Date();
+        document.getElementById('date-time').innerHTML=dt;
     </script>
 </body>
 </html>

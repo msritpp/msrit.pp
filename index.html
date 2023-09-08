@@ -51,7 +51,7 @@
       .sox p{
         text-align: center;
         background-color:  #333333;
-        height: 150px;
+        height: 70px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -111,6 +111,23 @@
           font-family: 'Black Ops One', cursive;
           color:#999999;
           }
+    .dox{
+        background-color: #333333;
+        height: 30px;
+      }
+      .dox button{
+        margin-top: 4px;
+        margin-left: 4px;
+        font-family: 'Black Ops One', cursive;
+        background-color: #333333;
+        color: #999999;
+      }
+      .dox h4{
+        float: right;
+        color: #999999;
+        font-family: 'Black Ops One', cursive;
+        margin-top: 4px;
+      }
     </style>
 </head>
 <body>
@@ -121,6 +138,10 @@
         <div class="gox">
             <h2>VISIT FOR MORE UPDATES.</h2>
             <marquee>SEE(Semester End Examination) starts from 14/09/2023.</marquee>
+        </div>
+        <div class="dox">
+           <button onclick="change()">Switch Theme</button>
+           <h4>Updated On:09/09/2023.</h4>
         </div>
         <div class="rock">
             <h3>MSRITPP started by mech(engineers) aim to provide a detailed notes given by the lectures.For more notes and query <a href="mailto:pppython01@gmail.com">contact us.</a></h3>
@@ -156,10 +177,5 @@
     <div class="sox">
         <p>© MSRITPP,Developed By Mech.<span id='date-time'></span></p>  
     </div>
-    
-    <script>
-        var dt = new Date();
-        document.getElementById('date-time').innerHTML=dt;
-    </script>
 </body>
 </html>

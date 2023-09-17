@@ -15,11 +15,11 @@ function togglehide(){
   var dora = document.getElementById('dora');
   var roar = document.getElementById('roar');
 
-  if(document.querySelector('#hide').innerHTML === '1st Sem'){
-    document.querySelector('#hide').innerHTML = '2nd Sem';
+  if(document.querySelector('#hide').innerHTML === '2nd Sem'){
+    document.querySelector('#hide').innerHTML = '1st Sem';
   }
   else{
-    document.querySelector('#hide').innerHTML = '1st Sem';
+    document.querySelector('#hide').innerHTML = '2nd Sem';
   }
   //switch from 1st to 2nd//
   if(roar.style.display === 'none'){

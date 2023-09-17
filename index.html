@@ -44,7 +44,7 @@
         color: #999999;
         font-family: 'Black Ops One', cursive;
       }
-        .gox a{
+      .gox a{
             text-decoration:none;
             color:#999999;
             font-family: 'Black Ops One', cursive;
@@ -130,6 +130,23 @@
         font-family: 'Black Ops One', cursive;
         margin-top: 4px;
       }
+     .owl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #hide{
+        font-family: 'Black Ops One', cursive;
+        background-color: #333333;
+        color: #999999;
+        cursor: pointer;
+        width: 80px;
+        border-radius: 10px;
+      }
+      .wox{
+        max-width: 300px;
+        margin: auto;
+      }
     </style>
 </head>
 <body>
@@ -140,18 +157,21 @@
         <!--Marquee('change')-->
         <div class="gox">
             <h2>VISIT FOR MORE UPDATES.</h2>
-            <marquee>SEE(Semester End Examination) starts from 14/09/2023.</marquee>
+            <marquee>1st sem notes have been uploaded,For 2nd sem notes click the below button.</marquee>
         </div>
         <div class="dox">
            <button>Switch Theme</button>
-           <h4>Updated On:09/09/2023.</h4>
+           <h4>Updated On:17/09/2023.</h4>
         </div>
         <div class="rock">
             <h3>MSRITPP started by mech(engineers) aim to provide a detailed notes given by the lectures.For more notes and query <a href="mailto:pppython01@gmail.com">contact us.</a></h3>
         </div>
         <!-- notes -->
+        <div class="owl">
+          <button id="hide">1st Sem</button>
+        </div>
        <div class="yox">
-        <ul>
+        <ul id="dora" style="display: none;">
           <li>Multivariate Calculus & Differential Equations
             <a href="https://drive.google.com/drive/folders/145yN6SZFlloaRw6lHkf6moQOgkHDjfA5">View</a>
           </li>
@@ -177,6 +197,31 @@
             <a href="https://drive.google.com/drive/folders/14ouOE66uVjfjEFnHEdprIM7_IAd2B2vk">View</a>
           </li>
         </ul>
+           <div class="wox">
+        <ul id="roar">
+          <li>Advanced calculus
+            <a href="https://drive.google.com/drive/folders/133uRezhg2Nl1b0CMOcMcC5MxlSGSeLs2">View</a>
+          </li>
+          <li>Engineering Chemistry
+            <a href="https://drive.google.com/drive/folders/1-lSQ16J_yNaRZODc15cipCYEa4ow93Uu">View</a>
+          </li>
+          <li>Constitution Of India
+            <a href="https://drive.google.com/drive/folders/10eLsnPKk4aMLs1QVdJbXQKGQGq4Z25pd">View</a>
+          </li>
+          <li>C - Programming
+            <a href="https://drive.google.com/drive/folders/11hXVICWH7CR4IKG5dKK5enP0MZVywwP4">View</a>
+          </li>
+          <li>Renewable Energy Sources
+            <a href="https://drive.google.com/drive/folders/11AiPikQLWUgC0wZY19dCIeVQpzsnFaby">View</a>
+          </li>
+          <li>Design Thinking
+            <a href="https://drive.google.com/drive/folders/1143lBKMxzk35l0wWVSulCTG33X9AmXDR">View</a>
+          </li>
+          <li>CAED
+            <a href="https://drive.google.com/drive/folders/12ByfwtUEQGpe-V7Hk8Nh5d3eVuQ6iD8C">View</a>
+          </li>
+        </ul>
+      </div>
        </div>
     <div class="sox">
         <p>© MSRITPP,Developed By Mech.<span id='date-time'></span></p>  

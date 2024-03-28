@@ -293,7 +293,7 @@
                 btn.style.display = 'block';
                 stop.style.display = 'none';
                 load.style.display = 'none';
-                if (recognition) {
+                if (recognition && recognition.running) {
                     recognition.stop();
                 }
             }

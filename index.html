@@ -290,10 +290,10 @@
                 let stop = document.getElementById('vv-stop-btn');
                 let btn = document.getElementById('vv-mic-btn');
                 let load = document.getElementById('loading');
-                btn.style.display = 'block';
-                stop.style.display = 'none';
-                load.style.display = 'none';
                 if (recognition && recognition.running) {
+                    btn.style.display = 'block';
+                    stop.style.display = 'none';
+                    load.style.display = 'none';
                     recognition.stop();
                 }
             }
